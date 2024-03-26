@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        section{
+            height: 250vh;
+            width: 250vw;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            
+            
+        }
+        #main{
+           background-image: url("bg.jpg");
+        }
+
+        .pluto{
+            
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            /*border: 2px solid black;*/
+            position: relative;
+            left: -60px;
+            box-shadow: 0 0 10px black;
+            background-image: url("plutotexture.jpg");
+            background-size: cover;
+
+        }
+        .neptune{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            position: relative;
+            left: -60px;
+            box-shadow: 0 0 10px rgb(83, 169, 240);
+            /*border: 2px solid black;*/
+            background-image: url("neptunetexture.jpg");
+            background-size: cover;
+        }
+        .uranus{
+            height: 100px;
+            width: 100px;
+            position: relative;
+            left: -100px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px aqua;
+            /*border: 2px solid black;*/
+            background-image: url("uranustexture.jpg");
+            background-size: cover;
+        }
+        .saturn{
+            height: 200px;
+            width: 200px;
+            position: relative;
+            left: -140px;
+            border-radius: 50%;
+            /*border: 2px solid black;*/
+            background-image: url("saturntexture.jpg");
+            background-size: cover;
+        }
+        .jupiter{
+            height: 200px;
+            width: 200px;
+            position: relative;
+            left: -130px;
+            border-radius: 50%;
+            /*border: 2px solid black;*/
+            background-image: url("jupitertexture.jpg");
+            background-size: cover;
+        }
+        .mars{
+            height: 75px;
+            width: 75px;
+            position: relative;
+            left: -20px;
+            border-radius: 50%;
+            /*border: 2px solid black;*/
+            background-image: url("marstexture.jpg");
+            background-size: cover;
+        }
+        .earth{
+            height: 120px;
+            width: 120px;
+            position: relative;
+            left: -40px;
+            top: 80px;
+            box-shadow: 0 0 10px rgb(115, 191, 241);
+            border-radius: 50%;
+            /*border: 2px solid black;*/
+            background-image: url("earthtexture.jpg");
+            background-size: cover;
+            animation: orbit 50s linear  infinite  ;
+        }
+        .moon{
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+           /* border: 2px solid black;*/
+            background-image: url("moontexture.webp");
+            background-size: cover;
+            position: relative;
+            box-shadow: 0 0 30px whitesmoke;
+            top: -40px;
+        }
+        .venus{
+            height: 85px;
+            width: 85px;
+            border-radius: 50%;
+            /*border: 2px solid black;*/
+            background-image: url("venustexture.jpg");
+            background-size: cover;
+            position: relative;
+            left: -20px;
+        }
+        .mercury{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            /*border: 2px solid black;*/
+            background-image: url("mercurytexture.jpg");
+            background-size: cover;
+            position: relative;
+            left: -20px;
+        }
+        .sun{
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            top: 1000px;
+            left: 1300px;
+            box-shadow: 0 0 20px goldenrod;
+            border-radius: 50%;
+            /*border: 2px solid black;*/
+            background-image: url("suntexture.jpg");
+            animation: glow 5s linear  infinite normal;
+        }
+
+        #s1{
+            height: 2000px;
+            width: 2000px;
+            border-radius: 50%;
+            border: 2px solid rgba(0, 0, 0, 0);
+            left: 100px;
+            position: relative;
+            animation: orbit 80s linear  infinite normal ;
+        }
+        #s2{
+            height: 1800px;
+            width: 1800px;
+            border-radius: 50%;
+            border: 2px solid rgba(0, 0, 0, 0);
+            left: 200px;
+            position: absolute;
+            animation: orbit 100s linear  infinite normal ;
+        }
+        #s3{
+            height: 1600px;
+            width: 1600px;
+            border-radius: 50%;
+            border: 2px solid rgba(0, 0, 0, 0);
+            left: 400px;
+            position: absolute;
+            animation: orbit 120s linear  infinite normal ;
+
+            
+        }
+        #s4{
+            height: 1400px;
+            width: 1400px;
+            border-radius: 50%;
+            border: 2px solid rgba(0, 0, 0, 0);
+            left: 600px;
+            position: absolute;
+            animation: orbit 70s linear  infinite normal ;
+        }
+        #s5{
+            height: 1200px;
+            width: 1200px;
+            border-radius: 50%;
+            border: 2px solid rgba(0, 0, 0, 0);
+            left: 800px;
+            position: absolute;
+            animation: orbit 160s linear  infinite normal ;
+        }
+        #s6{
+            height: 1000px;
+            width: 1000px;
+            border-radius: 50%;
+            border: 2px solid rgba(0, 0, 0, 0);
+            left: 900px;
+            position: absolute;
+            animation: orbit 40s linear  infinite normal ;
+        }
+        #s7{
+            height: 800px;
+            width: 800px;
+            border-radius: 50%;
+            border: 2px solid rgba(0, 0, 0, 0);
+            left: 1000px;
+            position: absolute;
+            animation: orbit 70s linear  infinite normal ;
+        }
+        #s8{
+            height: 600px;
+            width: 600px;
+            border-radius: 50%;
+            border: 2px solid rgba(0, 0, 0, 0);
+            left: 1100px;
+            position: absolute;
+            animation: orbit 140s linear  infinite normal ;
+        }
+
+        #s9{
+            height: 600px;
+            width: 600px;
+            border-radius: 50%;
+            border: 2px solid rgba(0, 0, 0, 0);
+            left: 1200px;
+            position: absolute;
+            animation: orbit 60s linear  infinite normal ;
+        }
+
+        @keyframes glow {
+            0%{
+                box-shadow: 0 0 50px orange;
+            }
+            25%{
+                box-shadow: 0 0 75px orange;
+            }
+            50%{
+                box-shadow: 0 0 100px orange;
+            }
+            75%{
+                box-shadow: 0 0 75px orange;
+            }
+            100%{
+                box-shadow: 0 0 50px orange;
+            }
+            
+        }
+        @keyframes orbit {
+            to{
+                transform: rotate(360deg);
+            }
+            
+        }
+        nav{
+            height: 200px;
+            width: 200px;
+            border: 2px dotted whitesmoke;
+            border-radius: 50%;
+            transform: skew(50deg);
+            box-shadow: 0 0 10px white;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <section id="main">
+        <section id="s1">
+            <div class="pluto"></div>
+        </section>
+        <section id="s2">
+            <div class="neptune"></div>
+        </section>
+
+        <section id="s3">
+            <div class="uranus"></div>
+        </section>
+
+        <section id="s4">
+            <div class="saturn">
+                <nav></nav>
+            </div>
+        </section>
+
+        <section id="s5">
+            <div class="jupiter"></div>
+        </section>
+
+        <section id="s6">
+            <div class="mars"></div>
+        </section>
+
+        <section id="s7">
+            <div class="earth">
+                <aside>
+                    <div class="moon"></div>
+                </aside>
+            </div>
+        </section>
+        <section id="s8">
+            <div class="venus"></div>
+        </section>
+
+        <section id="s9">
+            <div class="mercury"></div>
+        </section>
+        <div class="sun"></div>
+        
+    </section>
+</body>
+</html>
